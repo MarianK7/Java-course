@@ -6,7 +6,7 @@ enum eatingHabits {
     Herbivore
 }
 
-public class Animal {
+public abstract class Animal {
 
     String type;
     String name;
@@ -36,6 +36,8 @@ public class Animal {
     public void isWalking() {
         System.out.println(name + " is walking...");
     }
+
+    public abstract void move();
 
     public Animal(String type, String name, int age, int numberOfLegs, boolean winged, java_basics.eatingHabits eatingHabits) {
         this.type = type;
